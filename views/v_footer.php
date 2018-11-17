@@ -21,6 +21,25 @@
 <!-- Bootstrap core JavaScript -->
 <script src="<?=PATH_JS?>jquery.min.js"></script>
 <script src="<?=PATH_JS?>bootstrap.bundle.min.js"></script>
+<script src="<?=PATH_JS?>clipboard.min.js"></script>
+
+<script>
+		$(function () {
+			$('[data-toggle="popover"]').popover()
+		})
+    var btn = document.getElementById('copybutton');
+    var clipboard = new ClipboardJS(btn);
+
+		clipboard.on('success', function(e) {
+        $(btn).popover('show');
+				setTimeout(function () {
+				  $(btn).popover('hide');
+				}, 1500);
+    });
+		clipboard.on('error', function(e) {
+        $(btn).popover('hide');
+    });
+</script>
 
 </body>
 

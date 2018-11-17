@@ -52,6 +52,10 @@ header.masthead h1 {
   border-color: white;
 }
 
+#copybutton{
+  background-color: rgba(0,0,0,0);
+}
+
 #link{
   color: white;
 }

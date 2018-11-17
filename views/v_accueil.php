@@ -17,7 +17,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-9 mx-auto">
-					<h1 class="mb-4">Une URL longue ? Raccourcissez-là!</h1>
+					<h1 class="mb-4">Une URL longue ? Raccourcissez-la!</h1>
 					<h3 class="mb-5">Largement meilleur et plus court que les autres.</h3>
 				</div>
 				<div class="col-md-10 col-lg-8 col-xl-7 mx-auto">

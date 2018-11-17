@@ -9,7 +9,7 @@ function choixAlert($message, $short = null)
       $alert['messageAlert'] = MESSAGE_URL_I;
       break;
     case 'SHORT' :
-      $alert['messageAlert'] = '<a href='.LINK.'?q='.$short.' id="link">'.LINK.'?q='.$short.'</a>';
+      $alert['messageAlert'] = LINK.'?q='.$short;
       $alert['strongAlert'] = MESSAGE_SHORT;
       break;
     default :
