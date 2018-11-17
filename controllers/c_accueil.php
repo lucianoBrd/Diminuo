@@ -3,6 +3,18 @@ require_once(PATH_MODELS.'LinksDAO.php');
 require_once(PATH_ENTITY.'Links.php');
 $linksDAO = new LinksDAO();
 
+if(isset($_GET['q'])){
+  $shortcut = htmlspecialchars($_GET['q']);
+
+  $link = $linksDAO->getLinkByShortcut($shortcut);
+  if($link == null){
+    header('location: ../?error=URL_INVALIDE');
+    exit();
+  }
+  header('location: '.$link->getUrl());
+  exit();
+}
+
 if(isset($_POST['url'])){
   $url = $_POST['url'];
 
@@ -11,11 +23,11 @@ if(isset($_POST['url'])){
     exit();
   }
 
-  $shortcut = crypt($url, time());
+  $shortcut = crypt($url, rand());
 
-  $nbUrl = $linksDAO->getNbUrl($url);
-  if($nbUrl != 0){
-    header('location: ../?error=URL_UTILISEE');
+  $link = $linksDAO->getLinkByUrl($url);
+  if($link != null){
+    header('location: ../?short='.$link->getShortcut());
     exit();
   }
 
@@ -27,5 +39,9 @@ if(isset($_POST['url'])){
 if(isset($_GET['error'])){
   $error = htmlspecialchars($_GET['error']);
   $alert = choixAlert($error);
+}
+if(isset($_GET['short'])){
+  $short = htmlspecialchars($_GET['short']);
+  $alert = choixAlert('SHORT', $short);
 }
 require_once(PATH_VIEWS.'accueil.php');

@@ -1,6 +1,6 @@
 <?php
 
-function choixAlert($message)
+function choixAlert($message, $short = null)
 {
   $alert = array();
   switch($message)
@@ -8,8 +8,9 @@ function choixAlert($message)
     case 'URL_INVALIDE' :
       $alert['messageAlert'] = MESSAGE_URL_I;
       break;
-    case 'URL_UTILISEE' :
-      $alert['messageAlert'] = MESSAGE_URL_U;
+    case 'SHORT' :
+      $alert['messageAlert'] = '<a href='.LINK.'?q='.$short.' id="link">'.LINK.'?q='.$short.'</a>';
+      $alert['strongAlert'] = MESSAGE_SHORT;
       break;
     default :
       $alert['messageAlert'] = MESSAGE_ERREUR;

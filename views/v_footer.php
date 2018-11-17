@@ -9,7 +9,7 @@
 				<ul class="list-inline mb-0">
 					<li class="list-inline-item mr-3">
 						<a href="../">
-							<i class="fab fa-facebook fa-2x fa-fw"></i>
+							<i class="icon-screen-desktop m-auto text-primary"></i>
 						</a>
 					</li>
 				</ul>

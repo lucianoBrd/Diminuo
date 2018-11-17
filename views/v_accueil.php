@@ -32,9 +32,9 @@
 						</div>
 					</form>
 				</div>
-				<div class="col-xl-6 mx-auto">
-					<?php require_once(PATH_VIEWS.'alert.php');?>
-				</div>
+			</div>
+			<div class="col-xl-6 mx-auto">
+				<?php require_once(PATH_VIEWS.'alert.php');?>
 			</div>
 		</div>
 

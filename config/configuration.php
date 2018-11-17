@@ -7,7 +7,7 @@ const BD_HOST = !DEV?'emiliengzsbeel.mysql.db' : 'localhost';
 const BD_DBNAME = !DEV?'emiliengzsbeel' : 'diminuo';
 const BD_USER = !DEV?'emiliengzsbeel' : 'root';
 const BD_PWD = !DEV?'Beeleat01' : '';
-const LINK = !DEV?'https://lucien-brd.com/' : 'https://localhost/';
+const LINK = !DEV?'https://lucien-brd.com/' : 'http://localhost/';
 
 // Langue du site
 const LANG ='FR-fr';
