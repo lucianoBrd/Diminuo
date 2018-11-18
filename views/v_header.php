@@ -10,6 +10,8 @@
 
     <title>Diminuo</title>
 
+    <link rel="icon" type="image/png" href="<?=PATH_IMG?>logo.png" />
+
     <!-- Bootstrap core CSS -->
     <link href="<?=PATH_CSS?>bootstrap.min.css" rel="stylesheet">
 
