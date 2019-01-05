@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 h-50 text-center text-lg-left my-auto">
-				<p class="text-muted small mb-4 mb-lg-0">&copy; Diminuo 2018. All Rights Reserved.</p>
+				<p class="text-muted small mb-4 mb-lg-0">&copy; Diminuo <?= date('Y') ?>. All Rights Reserved.</p>
 			</div>
 			<div class="col-lg-6 h-50 text-center text-lg-right my-auto">
 				<ul class="list-inline mb-0">
