@@ -3,10 +3,10 @@
 // Accès base de données
 const DEV = FALSE;
 
-const BD_HOST = !DEV?'emiliengzs321.mysql.db' : 'localhost';
-const BD_DBNAME = !DEV?'emiliengzs321' : 'diminuo';
-const BD_USER = !DEV?'emiliengzs321' : 'root';
-const BD_PWD = !DEV?'Capiitainecool01' : '';
+const BD_HOST = !DEV?'' : 'localhost';
+const BD_DBNAME = !DEV?'' : 'diminuo';
+const BD_USER = !DEV?'' : 'root';
+const BD_PWD = !DEV?'' : '';
 const LINK = !DEV?'https://diminuo.lucien-brd.com/' : 'https://localhost/';
 
 // Langue du site
